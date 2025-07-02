@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+  </head>
+
+<body>
+    <div class="top-head">
+        <i class="fa fa-cutlery" aria-hidden="true"></i>
+        
+        <h1><span>&#129367</span>Recipe Finder</h1>
+        <h3>Discover delicious recipe by ingredient or dish name.</h3>
+    </div>
+    <div class="section">
+        <!-- <input id="search_input" type="text" class="input_text">
+        <button id="search_button" class="c-btn">Search</button> -->
+        <div class="search-wrapper">
+            <span class="search-icon">&#128269;</span>
+            <input id="search_input" type="text" class="input_text" placeholder="Search by Ingredient or Recipe name (e.g. chicken, potato, salad)">
+            <button id="search_button" class="search-btn">Search</button>
+        </div>
+        <div id="loading" class="loading-spinner" style="display: none;"></div>
+
+        <div id="results_head"></div>
+        <div id="results"></div>
+        
+        <div id="details_section" style="display: none; padding: 20px;">
+            <button id="back_button" class="c-btn">🔙 Back to Results</button>
+            <div id="full_recipe">
+                
+            </div>
+        </div>
+
+
+        <div id="bottom-section" class="bottom-section">
+            <h3>&#128115</h3>
+            <h1>Ready to cook sommething amazing?</h1>
+            <p class="text-grey">search for recipe by entering an ingredient you have or the name of a dish</p>
+            <p class="text-grey">you'd like to make.</p>
+            <div class="button-div">
+                <button class="c-btn">chicken</button>
+                <button class="c-btn">pasta</button>
+                <button class="c-btn">chocolate</button>
+                <button class="c-btn">beef</button>
+                <button class="c-btn">salad</button>
+                <button class="c-btn">soup</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
